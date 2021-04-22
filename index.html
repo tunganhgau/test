@@ -1,0 +1,19 @@
+<html>
+<head>
+  <script>
+    console.log('inline script');
+  </script>
+  <script src="https://raw.githubusercontent.com/tunganhgau/test/master/log.js"></script>
+  <script>
+    console.log('asd');
+    const firstSCript = document.head.firstChild;
+
+    const newScript = document.createElement('script');
+    newScript.src = 'external-file.js';
+    document.head.insertBefore(newScript, firstSCript);
+  </script>
+</head>
+  <body>
+
+  </body>
+</html>
